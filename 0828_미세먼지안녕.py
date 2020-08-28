@@ -79,3 +79,4 @@ while True:
     clean() #공기청정
     t+=1
 
+    
