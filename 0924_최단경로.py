@@ -12,7 +12,7 @@ INF=1e9
 dist=[INF]*(v+1)
 for _ in range(e):
     a,b,c=map(int,input().split())
-    graph[a].append((b,c)) #a에서 b로 가는 가중치 c
+    graph[a].append((b,c))
 
 def dijkstra(start):
     dist[start]=0
@@ -20,12 +20,12 @@ def dijkstra(start):
     q=[]
     heapq.heappush(q,(0,start))
     while q:
-        c,now= heapq.heappop(q) #가장 작은 노드의 비용과 노드번호
-        if dist[now]<c: #이미 처리된 적이 있는 노드면
+        c,now= heapq.heappop(q) 
+        if dist[now]<c: 
             continue
         for i in graph[now]:
             cost=dist[now]+i[1]
-            if dist[i[0]]>cost: #새로운 cost가 기존 거리보다 작다면
+            if dist[i[0]]>cost: 
                 dist[i[0]]=cost
                 heapq.heappush(q,(cost,i[0]))
 
