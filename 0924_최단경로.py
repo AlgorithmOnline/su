@@ -12,7 +12,7 @@ INF=1e9
 dist=[INF]*(v+1)
 for _ in range(e):
     a,b,c=map(int,input().split())
-    graph[a].append((b,c))
+    graph[a].append((b,c)) 
 
 def dijkstra(start):
     dist[start]=0
