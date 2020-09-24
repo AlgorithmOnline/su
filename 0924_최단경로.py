@@ -33,6 +33,6 @@ dijkstra(start)
 
 for i in range(1,v+1):
     if dist[i]==INF:
-        print("INF")
+        print("INF") 
     else:
         print(dist[i])
