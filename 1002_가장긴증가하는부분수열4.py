@@ -14,7 +14,7 @@ maxlen=max(dp)
 print(maxlen)
 lis=[]
 for i in range(n-1,-1,-1):
-    if dp[i]==maxlen: #최대길이인 것 구하기
+    if dp[i]==maxlen: 
         lis.append(arr[i])
         maxlen-=1
-print(' '.join(map(str,reversed(lis)))) #lis뒤집음
+print(' '.join(map(str,reversed(lis)))) 
