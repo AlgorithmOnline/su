@@ -12,3 +12,4 @@ while len(q)>1:
     card=q.popleft()
     q.append(card)
 print(q.pop())
+
