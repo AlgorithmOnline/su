@@ -16,3 +16,4 @@ def gcd(a,b):
 for i in range(1,n):
     res=gcd(res,dis[i]) 
 print(res)
+
