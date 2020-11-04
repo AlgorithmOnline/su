@@ -10,7 +10,7 @@ def solution(nums):
     cnt=0
     candi=[]
     selected=list(combinations(nums,3))
-    
+     
     for x,y,z in selected: 
         candi.append(x+y+z) 
     
